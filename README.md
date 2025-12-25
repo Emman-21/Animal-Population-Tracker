@@ -1,44 +1,63 @@
-<div align="center">
-🐾✨ ANIMAL POPULATION TRACKER ✨🐾
-A Console-Based C++ Population Monitoring System
-</div>
-📌 1. Project Title
+<div align="center"> <img src="https://github.com/user-attachments/assets/fb320ea0-0b1c-49c7-bac1-203125de2bab" width="1000"> </div>
+🐾✨ Animal Population Tracker ✨🐾
 
-Animal Population Tracker (C++ Console Application)
+Animal Population Tracker – A console-based C++ application for tracking and analyzing animal population trends across multiple years.
 
-📝 2. Description / Overview
+🌿 Description / Overview
 
-The Animal Population Tracker is a C++ console application designed to store, manage, and analyze animal population data across multiple years. It provides an interactive menu that allows users to add, search, delete, and display animal records, while automatically saving data to a file for future access.
+The Animal Population Tracker is a C++ console application designed to help users record, manage, and analyze population data of different animal species over time.
+It provides an interactive menu system that allows users to add, search, delete, and display animal records while automatically saving data for future use.
 
-The system also performs population trend analysis by computing yearly percentage changes, helping users identify whether an animal population is increasing, decreasing, or stable.
+The system also performs population trend analysis by computing yearly percentage changes, allowing users to determine whether an animal population is increasing, decreasing, or stable.
 
-🔄 3. CRUD Operations & Program Functionality
-🟢 CREATE — Add Animal Species
+This project helps solve the problem of manual data tracking by organizing records efficiently using data structures and file handling.
 
-✨ Allows users to insert a new animal record
+🧑‍💻 Program Structure
 
-✔ Enter animal name
+Main Program – Serves as the entry point, handles user input, menu navigation, and calls all supporting functions.
 
-✔ Input number of years (2–10)
+AnimalPopulationTracker/
+│
+├── README.md
+│
+├── animals.txt              (saved animal records)
+│
+├── main.cpp                 (main source code)
+│
+├── Functions
+│   ├── warmGreetings()
+│   ├── farewell_Greetings()
+│   ├── displayAnimal()
+│   ├── savetoFile()
+│   └── loadFromfile()
+│
+└── Data Structure
+    └── stack<MainInfos>
 
-✔ Provide population per year
+🗝️ Key Features
+➕ 1. Add Animal Species
+
+Register a new animal population record by providing:
+
+Animal name
+
+Number of years (2–10)
+
+Population data per year
 
 ✔ Automatically stored in a stack
+✔ Saved to animals.txt
+✔ Displays population trend and summary immediately
 
-✔ Data saved to animals.txt
+🔎 2. Search Animal Species
 
-📈 Population trends and summary are displayed immediately after insertion.
+Search for a specific animal by name and view:
 
-🔵 READ — View and Search Records
-🔍 Search Animal Species
+Yearly population data
 
-✨ Finds a specific animal by name
+Percentage change per year
 
-✔ Displays yearly population
-
-✔ Shows percentage change per year
-
-✔ Identifies overall trend
+Overall trend:
 
 📈 Increasing
 
@@ -46,67 +65,54 @@ The system also performs population trend analysis by computing yearly percentag
 
 ➖ Stable
 
-📊 Display All Animal Species
+🗑️ 3. Delete Animal Species
 
-✨ Displays all stored animal data
+Remove an existing animal record:
 
-✔ Uses stack reversal for correct order
+Searches through stored data
 
-✔ Each animal includes a detailed summary
+Deletes the selected animal
 
-✔ Clean and formatted console output
+Restores remaining records properly
 
-🔴 DELETE — Remove Animal Species
+Updates the saved file automatically
 
-✨ Deletes an animal record by name
+📊 4. Display All Animal Species
 
-✔ Searches through the stack
+Shows all stored animal records:
 
-✔ Removes the matched entry
+Maintains insertion order using stack reversal
 
-✔ Restores remaining records properly
+Displays full population tables
 
-✔ Updates the saved file automatically
+Includes trend summary for each animal
 
-💾 PERSISTENCE — File Handling
+💾 5. File Handling Integration
 
-✨ Ensures data is not lost
+The system automatically:
 
-✔ Automatically saves records
+Loads saved data at program startup
 
-✔ Loads data from file on startup
+Saves all changes instantly
 
-✔ Uses animals.txt as storage
+Uses animals.txt for persistent storage
 
-🧩 4. Program Structure
-🛠️ Main Components
-
-MainInfos (struct)
-Stores animal name, number of years, and population values
-
-stack<MainInfos>
-Manages animal records using LIFO order
-
-⚙️ Core Functions
-
-displayAnimal() → shows trends & summary
-
-savetoFile() → saves data
-
-loadFromfile() → loads data
-
-main() → controls program flow
-
-📁 System Flow
+🔄 CRUD Operations Summary
+Operation	Functionality
+Create	Add new animal species and population data
+Read	Search and display animal records
+Update	(Planned for future enhancement)
+Delete	Remove animal species from records
+🧩 Program Logic Overview
 User Input
    ↓
-Stack (Animal Records)
+stack<MainInfos>
    ↓
-Trend Analysis
+Population Analysis
    ↓
-animals.txt (File Storage)
+animals.txt (Persistent Storage)
 
-▶️ 5. How to Run the Program
+▶️ How to Run the Program
 🧱 Step 1: Compile
 g++ main.cpp -o animal_tracker
 
@@ -116,8 +122,11 @@ g++ main.cpp -o animal_tracker
 
 📌 The program automatically creates and loads animals.txt.
 
-🖥️ 6. Sample Output
-🐾 ANIMAL POPULATION TRACKER 🐾
+🌻 Sample Output
+Start
+=============================================================================
+            WELCOME TO THE ANIMAL POPULATION TRACKER
+=============================================================================
 
 Animal: Elephant Population Trends
 
@@ -126,42 +135,34 @@ Year        Population      Change(%)
 2022        4300            3.61%
 2023        4450            3.49%
 
-SUMMARY
-📈 Overall Trend: INCREASING
-🔥 Highest change occurred between 2021 and 2022
+-------------------------------- SUMMARY --------------------------------
 
-👤 7. Author and Acknowledgement
-✍️ Author
+Overall Trend: INCREASING
+Highest percentage change occurred between 2021 and 2022
+
+🏆 Acknowledgements
+👩‍🏫 Instructor
+
+Special thanks to our instructor for guidance and support in understanding C++ fundamentals, data structures, and file handling, which made the successful completion of this project possible.
+
+👨‍🎓 Author
 
 Emman Borillo
 
-🙏 Acknowledgement
+🔨 Future Enhancements
 
-Special thanks to the instructor for guidance and to classmates and learning resources that contributed to the understanding of C++ data structures, file handling, and logical program design.
+While the current system effectively manages population data, future improvements may include:
 
-🌱 8. Other Sections
-🚀 a. Future Enhancements
+Converting the program into a full OOP class-based design
 
-✨ Convert to full class-based OOP design
+Adding update/edit functionality for records
 
-✨ Add update/edit functionality
+Implementing sorting and filtering
 
-✨ Implement sorting and filtering
+Case-insensitive searching
 
-✨ Improve search (case-insensitive)
+Adding graphical visualization of population trends
 
-✨ Add graphical visualization
-
-📚 b. References
-
-📖 C++ Documentation — cplusplus.com
-
-📦 STL Stack & File Handling Tutorials
-
-🎓 Course Lecture Materials
-
-<div align="center">
+Migrating from text files to a database system
 
 🌟 Thank you for using the Animal Population Tracker! 🌟
-
-</div>
