@@ -8,16 +8,23 @@ Animal Population Tracker (C++ Console Application)
 
 📝 2. Description / Overview
 
-The Animal Population Tracker is a C++ console application designed to store, manage, and analyze animal population data across multiple years. It provides an interactive menu that allows users to add, search, delete, and display animal records, while automatically saving data to a file for future access. The system also performs population trend analysis by computing yearly percentage changes, helping users identify whether an animal population is increasing, decreasing, or stable.
+The Animal Population Tracker is a C++ console application designed to store, manage, and analyze animal population data across multiple years. It provides an interactive menu that allows users to add, search, delete, and display animal records, while automatically saving data to a file for future access.
+
+The system also performs population trend analysis by computing yearly percentage changes, helping users identify whether an animal population is increasing, decreasing, or stable.
 
 🔄 3. CRUD Operations & Program Functionality
 🟢 CREATE — Add Animal Species
 
 ✨ Allows users to insert a new animal record
+
 ✔ Enter animal name
+
 ✔ Input number of years (2–10)
+
 ✔ Provide population per year
+
 ✔ Automatically stored in a stack
+
 ✔ Data saved to animals.txt
 
 📈 Population trends and summary are displayed immediately after insertion.
@@ -26,31 +33,49 @@ The Animal Population Tracker is a C++ console application designed to store, ma
 🔍 Search Animal Species
 
 ✨ Finds a specific animal by name
+
 ✔ Displays yearly population
+
 ✔ Shows percentage change per year
+
 ✔ Identifies overall trend
-📈 Increasing | 📉 Decreasing | ➖ Stable
+
+📈 Increasing
+
+📉 Decreasing
+
+➖ Stable
 
 📊 Display All Animal Species
 
 ✨ Displays all stored animal data
+
 ✔ Uses stack reversal for correct order
+
 ✔ Each animal includes a detailed summary
+
 ✔ Clean and formatted console output
 
 🔴 DELETE — Remove Animal Species
 
 ✨ Deletes an animal record by name
+
 ✔ Searches through the stack
+
 ✔ Removes the matched entry
+
 ✔ Restores remaining records properly
+
 ✔ Updates the saved file automatically
 
 💾 PERSISTENCE — File Handling
 
 ✨ Ensures data is not lost
+
 ✔ Automatically saves records
+
 ✔ Loads data from file on startup
+
 ✔ Uses animals.txt as storage
 
 🧩 4. Program Structure
@@ -62,7 +87,7 @@ Stores animal name, number of years, and population values
 stack<MainInfos>
 Manages animal records using LIFO order
 
-Core Functions
+⚙️ Core Functions
 
 displayAnimal() → shows trends & summary
 
@@ -118,15 +143,21 @@ Special thanks to the instructor for guidance and to classmates and learning res
 🚀 a. Future Enhancements
 
 ✨ Convert to full class-based OOP design
+
 ✨ Add update/edit functionality
+
 ✨ Implement sorting and filtering
+
 ✨ Improve search (case-insensitive)
+
 ✨ Add graphical visualization
 
 📚 b. References
 
 📖 C++ Documentation — cplusplus.com
+
 📦 STL Stack & File Handling Tutorials
+
 🎓 Course Lecture Materials
 
 <div align="center">
