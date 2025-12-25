@@ -8,9 +8,7 @@ Animal Population Tracker (C++ Console Application)
 
 📝 2. Description / Overview
 
-The Animal Population Tracker is a C++ console application designed to store, manage, and analyze animal population data across multiple years.
-It provides an interactive menu that allows users to add, search, delete, and display animal records while automatically saving data to a file for future access.
-The system also performs population trend analysis by computing yearly percentage changes, helping users identify whether an animal population is increasing, decreasing, or stable.
+The Animal Population Tracker is a C++ console application designed to store, manage, and analyze animal population data across multiple years. It provides an interactive menu that allows users to add, search, delete, and display animal records, while automatically saving data to a file for future access. The system also performs population trend analysis by computing yearly percentage changes, helping users identify whether an animal population is increasing, decreasing, or stable.
 
 🔄 3. CRUD Operations & Program Functionality
 🟢 CREATE — Add Animal Species
@@ -30,7 +28,8 @@ The system also performs population trend analysis by computing yearly percentag
 ✨ Finds a specific animal by name
 ✔ Displays yearly population
 ✔ Shows percentage change per year
-✔ Identifies overall trend (📈 Increasing | 📉 Decreasing | ➖ Stable)
+✔ Identifies overall trend
+📈 Increasing | 📉 Decreasing | ➖ Stable
 
 📊 Display All Animal Species
 
@@ -127,9 +126,7 @@ Special thanks to the instructor for guidance and to classmates and learning res
 📚 b. References
 
 📖 C++ Documentation — cplusplus.com
-
 📦 STL Stack & File Handling Tutorials
-
 🎓 Course Lecture Materials
 
 <div align="center">
